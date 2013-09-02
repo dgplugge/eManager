@@ -1,0 +1,4 @@
+D:\MyCode\MVC\Tutorial\eManager.Web\eManager\bin\Release\eManager.dll
+D:\MyCode\MVC\Tutorial\eManager.Web\eManager\bin\Release\eManager.pdb
+D:\MyCode\MVC\Tutorial\eManager.Web\eManager\obj\Release\eManager.dll
+D:\MyCode\MVC\Tutorial\eManager.Web\eManager\obj\Release\eManager.pdb

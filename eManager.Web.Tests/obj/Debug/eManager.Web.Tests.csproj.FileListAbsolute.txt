@@ -1,0 +1,2 @@
+D:\MyCode\MVC\Tutorial\eManager.Web\eManager.Web.Tests\obj\Debug\eManager.Web.Tests.csproj.App.config
+D:\MyCode\MVC\Tutorial\eManager.Web\eManager.Web.Tests\obj\Debug\eManager.Web.Tests.csprojResolveAssemblyReference.cache
