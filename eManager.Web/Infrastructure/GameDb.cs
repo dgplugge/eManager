@@ -15,7 +15,7 @@ namespace eManager.Web.Infrastructure
 
         }
 
-        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Team> Teams { get; set; }
         public DbSet<Game> Games { get; set; }
 
         void IGameDataSource.Save()
@@ -23,9 +23,9 @@ namespace eManager.Web.Infrastructure
             SaveChanges();
         }
 
-        IQueryable<Employee> IGameDataSource.Employees
+        IQueryable<Team> IGameDataSource.Teams
         {
-            get {return Employees;}
+            get {return Teams;}
         }
 
         IQueryable<Game> IGameDataSource.Games

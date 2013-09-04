@@ -7,7 +7,7 @@ namespace eManager.Domain
 {
     public interface IGameDataSource
     {
-         IQueryable<Employee> Employees { get; }
+         IQueryable<Team> Teams { get; }
          IQueryable<Game> Games { get; }
          void Save();
     }

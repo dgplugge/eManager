@@ -5,10 +5,10 @@ using System.Web;
 
 namespace eManager.Domain
 {
-    public class Game
+    public class Team
     {
         public virtual int Id { get; set; }
-        public virtual string Venue { get; set; }
-        public virtual ICollection<Team> Teams { get; set; }
+        public virtual string Name { get; set; }
+        public virtual DateTime? HireDate { get; set; }
     }
 }

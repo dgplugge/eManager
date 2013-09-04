@@ -6,16 +6,16 @@
 
 <h2>@Model.Venue</h2>
 
-@Html.ActionLink("Create an employee","Create","Employee", new {GameId = @Model.Id}, null)
+@Html.ActionLink("Create a team","Create","Team", new {GameId = @Model.Id}, null)
 
 <table border="0" cellpadding="0" cellspacing="0">
     <tr>
         <th>Name</th>
     </tr>
-@foreach (var employee in Model.Employees)
+@foreach (var team in Model.Teams)
 {
     <tr><td>
-    @employee.Name
+    @team.Name
     </td>
     <td>
     </td></tr>
