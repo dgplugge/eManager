@@ -1,0 +1,23 @@
+﻿@model eManager.Domain.Game
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>@Model.Name</h2>
+
+@Html.ActionLink("Create an employee","Create","Employee", new {GameId = @Model.Id}, null)
+
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <th>Name</th>
+    </tr>
+@foreach (var employee in Model.Employees)
+{
+    <tr><td>
+    @employee.Name
+    </td>
+    <td>
+    </td></tr>
+}
+</table>

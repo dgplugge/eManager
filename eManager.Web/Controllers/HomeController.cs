@@ -10,17 +10,17 @@ namespace eManager.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private IDepartmentDataSource _db;
+        private IGameDataSource _db;
 
-        public HomeController(IDepartmentDataSource db)
+        public HomeController(IGameDataSource db)
         {
             _db = db;
         }
 
         public ActionResult Index()
         {
-            var allDepartments = _db.Departments;
-            return View(allDepartments);
+            var allGames = _db.Games;
+            return View(allGames);
         }
 
         public ActionResult About()

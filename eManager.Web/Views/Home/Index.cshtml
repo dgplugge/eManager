@@ -1,14 +1,14 @@
-﻿@model IEnumerable<eManager.Domain.Department>
+﻿@model IEnumerable<eManager.Domain.Game>
 
 @{
-    ViewBag.Title = "All Departments";
+    ViewBag.Title = "All Games";
 }
 <h1>@ViewBag.Title</h1>
 
 <ul>
-    @foreach (var Department in Model)
+    @foreach (var Game in Model)
     {
-        <li>@Html.ActionLink(@Department.Name,"Detail","Department",new { Department.Id},null)</li>
+        <li>@Html.ActionLink(@Game.Name,"Detail","Game",new { Game.Id},null)</li>
         
     }
         </ul>

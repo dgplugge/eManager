@@ -6,21 +6,21 @@ namespace eManager.Web.Migrations
     using System.Linq;
     using eManager.Domain;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<eManager.Web.Infrastructure.DepartmentDb>
+    internal sealed class Configuration : DbMigrationsConfiguration<eManager.Web.Infrastructure.GameDb>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(eManager.Web.Infrastructure.DepartmentDb context)
+        protected override void Seed(eManager.Web.Infrastructure.GameDb context)
         {
 
-            context.Departments.AddOrUpdate(d => d.Name,
-                new Department { Name = "Engineering"},
-                new Department { Name = "Sales"},
-                new Department { Name = "Human Resources"},
-                new Department { Name = "Shipping"}
+            context.Games.AddOrUpdate(d => d.Name,
+                new Game { Name = "Yankee Stadium"},
+                new Game { Name = "Camden Yards"},
+                new Game { Name = "Fenway Feild"},
+                new Game { Name = "Comerica Park"}
                 );
         }
 

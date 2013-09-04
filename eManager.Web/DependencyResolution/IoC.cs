@@ -29,7 +29,7 @@ namespace eManager.Web.DependencyResolution {
                                         scan.TheCallingAssembly();
                                         scan.WithDefaultConventions();
                                     });
-                            x.For<IDepartmentDataSource>().HttpContextScoped().Use<DepartmentDb>();
+                            x.For<IGameDataSource>().HttpContextScoped().Use<GameDb>();
                         });
             return ObjectFactory.Container;
         }

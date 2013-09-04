@@ -10,18 +10,18 @@ namespace eManager.Web.Controllers
 {
     public class EmployeeController : Controller
     {
-        private readonly IDepartmentDataSource _db;
-        public EmployeeController(IDepartmentDataSource db)
+        private readonly IGameDataSource _db;
+        public EmployeeController(IGameDataSource db)
         {
             _db = db;
         }
         //
         // GET: /Employee/
         [HttpGet]
-        public ActionResult Create(int departmentId)
+        public ActionResult Create(int gameId)
         {
             var model = new CreateEmployeeViewModel();
-            model.DepartmentId = departmentId;
+            model.GameId = gameId;
 
             return View(model);
         }
@@ -30,13 +30,13 @@ namespace eManager.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var department = _db.Departments.Single(d => d.Id == viewModel.DepartmentId);
+                var game = _db.Games.Single(d => d.Id == viewModel.GameId);
                 var employee = new Employee();
                 employee.Name = viewModel.Name;
                 employee.HireDate = viewModel.HireDate;
-                department.Employees.Add(employee);
+                game.Employees.Add(employee);
                 _db.Save();
-                return RedirectToAction("detail", "department", new { id = viewModel.DepartmentId });
+                return RedirectToAction("detail", "game", new { id = viewModel.GameId });
             }
             return View(viewModel);
         }
