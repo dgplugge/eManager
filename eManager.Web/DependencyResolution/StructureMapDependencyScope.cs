@@ -111,7 +111,7 @@ namespace eManager.Web.DependencyResolution
         /// Type of instance requested.
         /// </param>
         /// <param name="key">
-        /// Name of registered service you want. May be null.
+        /// Venue of registered service you want. May be null.
         /// </param>
         /// <returns>
         /// The requested service instance.

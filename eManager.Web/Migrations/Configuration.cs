@@ -16,11 +16,11 @@ namespace eManager.Web.Migrations
         protected override void Seed(eManager.Web.Infrastructure.GameDb context)
         {
 
-            context.Games.AddOrUpdate(d => d.Name,
-                new Game { Name = "Yankee Stadium"},
-                new Game { Name = "Camden Yards"},
-                new Game { Name = "Fenway Feild"},
-                new Game { Name = "Comerica Park"}
+            context.Games.AddOrUpdate(d => d.Venue,
+                new Game { Venue = "Yankee Stadium"},
+                new Game { Venue = "Camden Yards"},
+                new Game { Venue = "Fenway Feild"},
+                new Game { Venue = "Comerica Park"}
                 );
         }
 
