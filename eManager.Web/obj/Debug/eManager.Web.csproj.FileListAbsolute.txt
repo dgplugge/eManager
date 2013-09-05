@@ -77,6 +77,8 @@ D:\MyCode\MVC\Tutorial\eManager.Web\eManager.Web\bin\Mono.Math.xml
 D:\MyCode\MVC\Tutorial\eManager.Web\eManager.Web\obj\Debug\eManager.Web.csproj.App.config
 D:\MyCode\MVC\Tutorial\eManager.Web\eManager.Web\bin\eManager.dll
 D:\MyCode\MVC\Tutorial\eManager.Web\eManager.Web\bin\eManager.pdb
+D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\obj\Debug\eManager.Web.csproj.App.config
+D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\obj\Debug\eManager.Web.csprojResolveAssemblyReference.cache
 D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\bin\eManager.Web.dll.config
 D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\bin\eManager.Web.dll
 D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\bin\eManager.Web.pdb
@@ -152,7 +154,5 @@ D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\bin\WebMatrix.Data.xml
 D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\bin\WebMatrix.WebData.xml
 D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\bin\Org.Mentalis.Security.Cryptography.xml
 D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\bin\Mono.Math.xml
-D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\obj\Debug\eManager.Web.csproj.App.config
-D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\obj\Debug\eManager.Web.csprojResolveAssemblyReference.cache
 D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\obj\Debug\eManager.Web.dll
 D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager.Web\obj\Debug\eManager.Web.pdb

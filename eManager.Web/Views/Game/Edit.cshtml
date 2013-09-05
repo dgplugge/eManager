@@ -1,0 +1,52 @@
+﻿@model eManager.Web.Models.CreateGameViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Game</legend>
+
+        @Html.HiddenFor(model => model.GameId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Venue)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Venue)
+            @Html.ValidationMessageFor(model => model.Venue)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.GameTime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.GameTime)
+            @Html.ValidationMessageFor(model => model.GameTime)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Home.Name)
+        </div>
+        <div>
+            @Html.DropDownList("Name", new SelectList(Model.Teams, "Team.Name" ), "Please select a team")
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

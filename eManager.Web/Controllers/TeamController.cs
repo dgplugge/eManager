@@ -18,10 +18,10 @@ namespace eManager.Web.Controllers
         //
         // GET: /Team/
         [HttpGet]
-        public ActionResult Create(int gameId)
+        public ActionResult Create(int teamId)
         {
             var model = new CreateTeamViewModel();
-            model.GameId = gameId;
+            model.TeamId = teamId;
 
             return View(model);
         }
@@ -30,13 +30,12 @@ namespace eManager.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var game = _db.Games.Single(d => d.Id == viewModel.GameId);
+                var game = _db.Games.Single(d => d.Id == viewModel.TeamId);
                 var team = new Team();
                 team.Name = viewModel.Name;
-                team.HireDate = viewModel.HireDate;
-                game.Teams.Add(team);
+                game.Home = team;
                 _db.Save();
-                return RedirectToAction("detail", "game", new { id = viewModel.GameId });
+                return RedirectToAction("detail", "game", new { id = viewModel.TeamId });
             }
             return View(viewModel);
         }

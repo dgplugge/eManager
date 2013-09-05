@@ -9,6 +9,7 @@ namespace eManager.Domain
     {
         public virtual int Id { get; set; }
         public virtual string Venue { get; set; }
-        public virtual ICollection<Team> Teams { get; set; }
+        public virtual Team Home { get; set; }
+        public virtual DateTime? GameTime { get; set; }
     }
 }

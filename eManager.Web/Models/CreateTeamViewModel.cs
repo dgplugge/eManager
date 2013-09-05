@@ -10,7 +10,7 @@ namespace eManager.Web.Models
     public class CreateTeamViewModel
     {
         [HiddenInput(DisplayValue=false)]
-        public int GameId { get; set; }
+        public int TeamId { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]

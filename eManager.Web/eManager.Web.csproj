@@ -201,6 +201,7 @@
     <Compile Include="Infrastructure\GameDb.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\CreateGameViewModel.cs" />
     <Compile Include="Models\CreateTeamViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -327,6 +328,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Team\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -340,9 +342,10 @@
     <None Include="Properties\PublishProfiles\eManagerDgp - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.0.3.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Game\Detail.cshtml" />
-    <Content Include="Views\Team\Create.cshtml" />
     <Content Include="Views\Shared\_Layout.mobile.cshtml" />
+    <Content Include="Views\Game\Create.cshtml" />
+    <Content Include="Views\Game\Detail.cshtml" />
+    <Content Include="Views\Game\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\eManager\eManager.Domain.csproj">
