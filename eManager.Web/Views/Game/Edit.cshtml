@@ -34,7 +34,7 @@
             @Html.LabelFor(model => model.Home.Name)
         </div>
         <div>
-            @Html.DropDownList("Name", new SelectList(Model.Teams, "Team.Name" ), "Please select a team")
+            @Html.DropDownList(x => x.Name, new SelectList(Model.Teams, "Team.Name" ), "Please select a team")
         </div>
 
         <p>
