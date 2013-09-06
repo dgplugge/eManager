@@ -1,0 +1,29 @@
+﻿@model eManager.Domain.Game
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<fieldset>
+    <legend>Game</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Venue)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Venue)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.GameTime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.GameTime)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

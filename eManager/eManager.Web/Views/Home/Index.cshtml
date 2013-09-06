@@ -1,0 +1,14 @@
+﻿@model IEnumerable<eManager.Domain.Game>
+
+@{
+    ViewBag.Title = "All Games";
+}
+<h1>@ViewBag.Title</h1>
+
+<ul>
+    @foreach (var Game in Model)
+    {
+        <li>@Html.ActionLink(@Game.Venue,"Detail","Game",new { Game.Id},null)</li>
+        
+    }
+        </ul>

@@ -1,0 +1,12 @@
+D:\MyCode\MVC\Tutorial\eManager.Web\eManager\bin\Debug\eManager.dll
+D:\MyCode\MVC\Tutorial\eManager.Web\eManager\bin\Debug\eManager.pdb
+D:\MyCode\MVC\Tutorial\eManager.Web\eManager\obj\Debug\eManager.dll
+D:\MyCode\MVC\Tutorial\eManager.Web\eManager\obj\Debug\eManager.pdb
+D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager\bin\Debug\eManager.dll
+D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager\bin\Debug\eManager.pdb
+D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager\obj\Debug\eManager.dll
+D:\MyCode\MVC\Tutorial\eManager.Web\MyCopy\eManager\obj\Debug\eManager.pdb
+M:\MyCode\MVC\eManager\eManager\eManager\bin\Debug\eManager.dll
+M:\MyCode\MVC\eManager\eManager\eManager\bin\Debug\eManager.pdb
+M:\MyCode\MVC\eManager\eManager\eManager\obj\Debug\eManager.dll
+M:\MyCode\MVC\eManager\eManager\eManager\obj\Debug\eManager.pdb
